@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="A full-stack strong password generator made by Martin McWatters.">
+		<title>Strong Password Generator</title>
+		<link href="https://fonts.googleapis.com" rel="preconnect">
+		<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-color: #212529;
+				color: white;
+				font-family: 'Roboto', sans-serif;
+				margin: 50px;
+				text-align: center
+			}
+			h3 {
+				font-weight: lighter
+			}
+			#footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				background-color: #5f3dc4;
+				font-size: 1.15em
+			}
+		</style>
+	</head>
+	<body>
+		<h1>{{ password }}</h1>
+		<h3>Your Randomly-Generated Password</h3>
+		<button
+			style="
+			background-color: #5f3dc4;
+			font-size: 1.15em;
+			cursor: pointer;
+			border: none;
+			border-radius: 15px;
+			margin: 20px;
+			color: white;
+			width: 100px;
+			height: 50px"
+			onClick="window.location.reload()">
+				Refresh
+			</button>
+		<div id="footer">
+			<p>Copyright &copy; 2022 Martin McWatters</p>
+		</div>
+	</body>
+</html>
